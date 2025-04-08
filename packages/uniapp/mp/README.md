@@ -1,6 +1,9 @@
 # 代码风格
 1. 安装 `eslint-vue eslint-js prettier` 三个插件
-2. 工具 - 设置 - 插件配置，关闭HBuilderX自带的 Beautify 格式化插件。其他的按图中的勾选操作。
+2. 工具 - 设置 - 插件配置，关闭HBuilderX自带的 Beautify 格式化插件。其他的按图中的勾选操作。图2自定义生效文件范围后面手动添加 `,**/*.js`，否则不会对js文件进行格式化。
+[![alt](assets/img/1.png)]()
+[![alt](assets/img/2.png)]()
+[![alt](assets/img/3.png)]()
 3. 工具 - 设置 - 编辑器配置，勾选保存时自动格式化代码。
 4. 创建配置文件`.eslintrc.js` `.eslintignore` `.prettierrc` `.prettierignore`
 5. https://hx.dcloud.net.cn/Tutorial/extension/eslint-js
@@ -69,3 +72,5 @@ H5获取页面路径拿到参数。
 # 蓝牙打印
 
 - 在写入操作之前需要根据 `deviceId` 获取服务，再根据服务 `Service` 获取特征值 `Characteristic`，特征值的 properties 中包含了 read、write、notify、indicate 四个属性，其中 read 和 write 表示该特征值是否支持读和写操作。
+
+
