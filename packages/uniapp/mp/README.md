@@ -79,7 +79,20 @@ H5获取页面路径拿到参数。
 ## 打印后中文乱码问题，需要转编码成 `GBK`
 - 项目用的这个： https://github.com/cnwhy/GBK.js/tree/master
 - 其他参考：https://github.com/GitOfZGT/wx-bluetooth-print-demo
-https://github.com/inexorabletash/text-encoding/tree/master
+- https://github.com/inexorabletash/text-encoding/tree/master
+- https://juejin.cn/post/7443716386868396069#heading-9
 - 编码对照表： https://www.cnblogs.com/feichengwulai/articles/3653368.html
-https://www.toolhelper.cn/Encoding/GBK
+- https://www.toolhelper.cn/Encoding/GBK
+
+# 报错问题
+- 纯属微信web开发者工具或者uniapp的问题，运行后报错
+```
+Error: module 'common/js/gbk.min.js' is not defined, require args is './gbk.min.js'
+
+// 改目录后可以正常使用
+const GBK = require('../../static/gbk.min.js')
+```
+在 uniapp 项目中存在此文件，但是运行后在开发者工具目录中查看，此文件没有被打包进去，所以会报错找不到文件。解决：把js文件放到static目录下。
+
+- 小程序使用蓝牙需要在小程序官方后台配置蓝牙权限隐私政策才能正常使用，否则会报错无法调用蓝牙，如何在未配置隐私政策的情况下，本地使用蓝牙？本地开发者工具可以通过降基础库暂时解决。
 
