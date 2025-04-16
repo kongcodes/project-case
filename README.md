@@ -1,2 +1,2 @@
 # uniapp-case
-uniapp相关项目案例
+项目案例/文档

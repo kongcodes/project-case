@@ -1,0 +1,3 @@
+```
+npm create vue@latest
+```
